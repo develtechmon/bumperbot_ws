@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+
+<robot name="bumperbot" xmlns:xacro="http://ros.org/wiki/xacro">
+
+<gazebo>
+    <plugin name="gazebo_ros2_control" filename="libgazebo_ros2_control.so">
+        <!-- <parameters>$(find bumperbot_controller)/config/my_control.yaml</parameters> -->
+        <parameters>$(find bumperbot_controller)/config/bumperbot_controllers.yaml</parameters>
+        <!-- <parameters>$(find techmon_controller)/config/gazebo_ros2_ctl_use_sim.yaml</parameters> -->
+    </plugin>
+</gazebo>
+
+</robot>
